@@ -1,7 +1,7 @@
 var Word = require("./Word.js");
 var inquirer = require("inquirer");
 
-var mysteryArr = ["phone", "cup", "mouse", "computer", "table"];
+var mysteryArr = ["phone", "cup", "mouse", "computer", "table", "mississippi"];
 var currentWord;
 var gameState = ["playing", "won", "lost"];
 var currentState = 0;
@@ -28,9 +28,10 @@ function playGame(){
 }
 
 function printGame(){
+    console.log("|---------------------------|");
+    console.log("|-- Word: " + currentWord.printWord() + " --|")
     if (gameState[currentState] === "playing"){
-        console.log("|---------------------------|");
-        console.log("|-- Word: " + currentWord.printWord() + " --|")
+
 
         inquirer.prompt([
             {
