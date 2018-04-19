@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Hangman Game",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"   
+  },
   "dependencies": {
     "inquirer": "^5.2.0"
   },
